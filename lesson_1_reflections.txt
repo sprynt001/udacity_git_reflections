@@ -1,0 +1,60 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    Answer (Monday 04 May 2015)
+    Using the diff command filtered out corresponding lines in the two files that did not have changes and showed only those that had changes. It greatly reduced the number of lines I had to look at. However, finding the change still required having to look carefully at a number of lines. Using a tool such as vimdiff that shows more refined details of what has been changed (highlighting individual sections of lines) would have been better.
+======================================================================
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Answer (Monday 04 May 2015)
+    Having easy access to the entire history of a file provided by a version control system (in a form that does not involved having to manually save individual files with extensions such as _backup_20150301_when_i_made_change_so_and_so) makes for a more efficient programmer in the following ways:
+    (1) When changes are made to a file they can easily be checked into the version control system with the relevant comments included during the commit. So less time is spent saving multiple copies of files
+    (2) It promotes experimentation. Because one is not worried about the overhead of backing up one can concentrate on trying out experimental solutions to solve problems.
+    (3) It helps to keep track of changes and to rollback to previous versions if necessary
+======================================================================
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Answer (Monday 04 May 2015)
+    Pros:
+    1) The main (only?) pro is that the programmer can choose to commit at logical points that make sense in the contect of the code/project 
+
+    Cons:
+    1) If the programmer forgets to commit over a period of time this can be dangerous as code could potentially be lost
+    2) If commits happen outside the programmers control, the commit points may not reflect logical changes to the code
+    3) A programmer may not have the necessary background/experience to make commits in an optimum way
+======================================================================
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Answer (Tuesday 05 May 2015)
+    Saving multiple files in one commit allows changes in different files that are related to the same logical change to be stored together. This is useful for several reasons. Firstly, the message put in the commit applies to all the files, and secondly, if one wants to rollback, all the necessary files changed can be reverted in one go.
+
+    The purpose of Google Docs is different to that of a source code control system. Google docs does not expect users to be technically savvy and it is also used for a wide variety of documents which may be unrelated. Therefore it makes sense for it to autosave with each change as it does.
+
+======================================================================
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Answer (Tuesday 05 May 2015)
+    The git log command gives information on the commits that have been made to the repository. The important thing with this are the commit messages which give a context around what each commit involved. However, the time of the commit and the user that made the commit are also shown. The command has a wide variety of options that give more insight into each commit. One that was particularly useful for the exercise involved at this point was --shortstat which showed the total number of lines added and deleted during the commit.
+
+    The git diff command allows the difference between two revisions to be displayed. In the form used so far it shows the sections of both files where changes have occured and puts some formatting around the changes to make them more decipherable by the user. e.g. adding plus and minus signs and colour coding them.
+
+======================================================================
+How might using version control make you more confident to make changes that
+could break something?
+
+    Answer (Wednesday 06 May 2015)
+    The fact that I know that I can always return to a previous version of code means if I make a mistake, as long as I have checked in code before I started making the changes that caused the mistake, I can always return to the previous unchanged version in a straightforward manner gives confidence to make changes. Personally, I have to work with this a bit more as when using svn I was still nervous about making changes.
+
+======================================================================
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Answer (Wednesday 06 May 2015)
+    I would like to use Git in my MMU coding, Sprynt coding and when writing scientific papers.
