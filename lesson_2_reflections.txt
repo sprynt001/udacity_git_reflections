@@ -37,3 +37,12 @@ What is the result of merging two branches together? Why do we represent it in t
 Merging two branches together creates a commit that contains the changes made in both branches. 
 
 They are represented schematically to show that the code diverged at some point and followed independent tracks which are brought together during the merge operation to create the unified version with changes from both branches.
+======================================================================
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+Git's automatic merging is very basic and this means if the changes in the commits being merged are easily separable it goes ahead and merges, but if there is a chance of ambiguity it does not. This creates less work for programmers when clearly separable changes have been made.
+
+The main con of the automatic merging is that if there is any chance of ambiguity - same region of code is changed in both files, then it does not merge the region. It does not even try to investigate the nature of the changes. This can also be viewed as a good thing as it minimises the chance of introducing errors.
+
+Another pro is that in the case of conflicts it allows them to be identified easily by showing the sections from both commits clearly.
