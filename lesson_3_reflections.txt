@@ -7,3 +7,10 @@ The second reason is backup. If the reposirtory is located remotely (e.g. on git
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository? (answered 23/05/2015)
 
 Doing the push/pull manually allows the user to retain control of the state of the repository. I would not want something someone else is working on to be introduced to what I am doing without my explicit knowledge. Also If I have some software e.g. Python code, I would want to be in control of the versions I am using. It also means I would know when/what to merge (How will merging work for automatic pulls) and finally, I could take a look at what has been updated on the repository and pick and choose what to pull.
+======================================================================
+
+Describe the differences between forks, clones and branches. When would you use one instead of another?
+
+Forks are copies of a repository made through the Github site and which create their copy on Github (as an origin?). The creation process keeps track of whom you forked the repository from and acknowledges them. Clones are copies of repositories usually made to a local machine (from a remote like github for instance) I think you may be allowed to check in commits to the repository you cloned from? Branches are a separate strand of development with its own commit history in a repository. Forking and cloning create new repositories, but branching does not.
+
+I would use a fork if I wanted to actively work on a repository that I did not have the rights to commit to, or I wanted to make wholesale changes to the repository. I have used cloning to create local copies of repositories (mine and those of other people). Branching is useful when working on a separate strand of development within a repository - e.g. exploring adding a new feature, that you do not want to impact on the main work being done on the code in the repository.
