@@ -26,4 +26,8 @@ How would you collaborate without using Git/Github? What would be easier and wha
 I would collaborate without using Github by using SVN which I have used in the past. The only thing I think will be really different is the fact that I would not be able to do commits to the repository 'offline'. However, if the question was more general about collaborating without using a version control system, then it would involve manually zipping up code to share and inspecting files for changes - e.g. using diff tools. And a lot of manual merging.
 
 If this was to be done only once or twice it may not be a huge problem, but if it is an ongoing project then it is not practical to do this manually over a long period. The main difficulties with using Github are the learning curve and the need to access the central repository. However, the fact that it is a distributed version control system mitigates the second point and also gives a lot of flexibility for collaboration - especially in regions where internet access may be poor.
+======================================================================
 
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+I would use a separate branch in a number of scenarios - e.g. when working on a new strand of work or carrying out a bug fix. In general, anything that may interfere with master and disrupt it. This gives a great deal of flexibility in allowing separate strands of work to occur in parallel and also allow exploratory work without fear of damaging the master code.
