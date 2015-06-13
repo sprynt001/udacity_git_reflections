@@ -19,3 +19,11 @@ I would use a fork if I wanted to actively work on a repository that I did not h
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 The main benefit of this is to allow a user to know if their branch is ahead or behind the remote branch (master?) even when the user is offline.
+======================================================================
+
+How would you collaborate without using Git/Github? What would be easier and what would be harder?
+
+I would collaborate without using Github by using SVN which I have used in the past. The only thing I think will be really different is the fact that I would not be able to do commits to the repository 'offline'. However, if the question was more general about collaborating without using a version control system, then it would involve manually zipping up code to share and inspecting files for changes - e.g. using diff tools. And a lot of manual merging.
+
+If this was to be done only once or twice it may not be a huge problem, but if it is an ongoing project then it is not practical to do this manually over a long period. The main difficulties with using Github are the learning curve and the need to access the central repository. However, the fact that it is a distributed version control system mitigates the second point and also gives a lot of flexibility for collaboration - especially in regions where internet access may be poor.
+
